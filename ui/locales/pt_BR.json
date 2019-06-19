@@ -1,0 +1,310 @@
+{
+	"error": {
+		"username": {
+			"notfound": "Usuário não encontrado",
+			"taken": "Usuário Já existente",
+			"validation": {
+				"length": "o nome do usuário deve conter entre {{ min }} e {{ max }} caracteres"
+			}
+		},
+		"password": {
+			"mismatch": "Senhas não coincidem",
+			"validation": {
+				"length": "A senha deve conter no mínimo {{ min }} caracteres"
+			}
+		},
+		"user": {
+			"disabled": "Usuário desabilitado，Motivo：{{ reason }}"
+		},
+		"challenge": {
+			"notfound": "Não encontrado"
+		},
+		"submission": {
+			"failedByContest": "O competição não está disponível no momento",
+			"failedByChallenge": "O desafio não está disponível no momento"
+		},
+		"contest": {
+			"notfound": "competição não encontrado",
+			"notregistered": "Você não está registrado para esta competição",
+			"regBegin": {
+				"greaterThanEnd": "O horário de início de registro deve ser inferior ao horário de fim de registro"
+			},
+			"regEnd": {
+				"greaterThanEnd": "O horário de fim de registro deve ser inferior ao horário de término da competição"
+			},
+			"begin": {
+				"greaterThanEnd": "O horário de inicio da competição deve ser inferior ao horário de término da competição"
+			},
+			"registration": {
+				"notfound": "Competição não encontrada",
+				"notReady": "Esta competição ainda encontra-se fora do período de inscrição",
+				"passed": "Esta competição já encerrou as inscrições",
+				"registered": "Você já se inscreveu para participar desta competição",
+				"validated": "Usuário já validade para a competição"
+			},
+			"challenge": {
+				"exist": "Este desafio já existe para esta competição",
+				"notfound": "Este desafio não foi encontrado"
+			}
+		},
+		"contestEvent": {
+			"notfound": "Evento da competição não encontrado"
+		},
+		"validation": {
+			"field": "Campo inválido",
+			"required": "Campo obrigatório"
+		},
+		"generic": {
+			"404": "Página não encontrada =(",
+			"500": "Cabeças vão rolar, erro interno do servidor : {{ message }}",
+			"csrf": "Validação do formulário falhou",
+			"privilege": "Você não possui permissão para realizar esta ação",
+			"returnHome": "Rotornar para página incial",
+			"limitExceeded": "Ops, você atingiu o nosso limite de requisições, aguarde {{ minutes }} minutos para continuar ou você será bloqueado"
+		}
+	},
+	"event": {
+		"contest": {
+			"announcement": "{{ message }}",
+			"challenge": {
+				"open": "O desafio {{ name }} foi aberto",
+				"updated": "O desafio {{ name }} foi atualizado"
+			}
+		},
+		"state": {
+			"PENDING": "Pendente",
+			"PUBLISHED": "Publicado",
+			"IGNORED": "Ignorado"
+		}
+	},
+	"contest": {
+		"state": {
+			"UPCOMING": "Em breve",
+			"READY": "Pronto",
+			"ACTIVE": "Ativo",
+			"DONE": "Acabado"
+		},
+		"regState": {
+			"UPCOMING": "O registro ainda não está disponível",
+			"OPEN": "Período de registro aberto",
+			"CLOSE": "Período de registro fechado"
+		}
+	},
+	"ui": {
+		"nav": {
+			"togglenav": "切换导航",
+			"signin": "Login",
+			"register": "Registrar",
+			"profile": "Perfil",
+			"signout": "Sair"
+		},
+		"sidebar": {
+			"announcements": "Anúncios",
+			"contests": "Competições",
+			"tasks": "Desafios",
+			"scoreboard": "Placar",
+			"manage": {
+				"header": "Administração",
+				"dashboard": "Dashboard",
+				"announcements": "Anúncios",
+				"tasks": "Desafios",
+				"contests": "Competições",
+				"users": "Usuários"
+			}
+		},
+		"page": {
+			"genericOp": {
+				"update": "Atualizar",
+				"cancel": "Cancelar",
+				"create": "Criar",
+				"add": "Adicionar"
+			},
+			"challenge": {
+				"detail": {
+					"wrongFlag": "Flag incorreta",
+					"successMsg": "Parabéns a Flag está correta"
+				}
+			},
+			"user": {
+				"profile": {
+					"title": "Título",
+					"nickname": "* Apelido",
+					"name": "* Nome",
+					"stdid": "* Número de Inscrição",
+					"department": "* Departamento",
+					"grade": "* Formação",
+					"phone": "* Telefone",
+					"email": "* E-mail",
+					"info": {
+						"title": "Por favor, preencha seus dados",
+						"content": "Informe seus dados para que possamos verificar sua identidade"
+					},
+					"required": {
+						"title": "Por favor, preencha seus dados",
+						"content": "Informe seus dados para que possamos verificar sua identidade",
+						"link": "Editar informações pessoais"
+					},
+					"updatePass": {
+						"title": "Alterar usuário e senha",
+						"original": "Senha Atual",
+						"new": "Novo Senha",
+						"newRepeat": "(Repita) Novo Senha",
+						"successMsg": "atualizado com sucesso"
+					},
+					"successMsg": "Cadastro alterado com sucesso"
+				}
+			},
+			"ajax": {
+				"postFailMsg": "Falha ao enviar dados",
+				"getFailMsg": "Falha ao carregar dados",
+				"putFailMsg": "Falha ao atualizar dados",
+				"deleteFailMsg": "Falha ao excluir dados",
+				"networkError": "Falha na comunicação"
+			},
+			"signin": {
+				"msg": "Registre-se",
+				"username": "Nome de Usuário",
+				"password": "Senha",
+				"signin": "Logar",
+				"register": "Registrar-se"
+			},
+			"error": {
+				"title": "Falha no login :(",
+				"type": "Digite: {{ name }}",
+				"message": "Mensagem: {{ msg }}"
+			},
+			"register": {
+				"retypeNotMatchMsg": "As senhas digitadas não conferem",
+				"msg": "Criar uma nova conta",
+				"username": "Nome de Usuário",
+				"password": "Senha",
+				"retypePassword": "(Repita) Senha",
+				"register": "Registrar",
+				"signin": "Logar"
+			},
+			"contest": {
+				"list": {
+					"col": {
+						"name": "名称",
+						"challenges": "题目数量",
+						"registrants": "注册人数",
+						"state": "比赛状态",
+						"regState": "注册状态",
+						"regBegin": "开放注册时间",
+						"begin": "比赛开始时间",
+						"end": "比赛结束时间"
+					},
+					"box": {
+						"activeContests": "最近的比赛",
+						"allContests": "所有比赛"
+					}
+				},
+				"register": {
+					"dialog": {
+						"title": "身份验证",
+						"submit": "递交并注册",
+						"verify": "验证",
+						"skip": "忽略并注册"
+					},
+					"successMsg": "注册比赛成功",
+					"successBody": "您已成功注册该比赛！比赛开始后，您可以前往「任务」页面查看题目。"
+				}
+			},
+			"announcement": {
+				"col": {
+					"publish": "发布时间",
+					"update": "最后修改时间"
+				}
+			},
+			"manage": {
+				"user": {
+					"resetPassword": {
+						"successMsg": "重设密码成功"
+					}
+				},
+				"announcement": {
+					"create": {
+						"successMsg": "创建公告成功"
+					},
+					"edit": {
+						"successMsg": "修改公告成功",
+						"title": "标题",
+						"content": "内容"
+					}
+				},
+				"challenge": {
+					"create": {
+						"successMsg": "创新任务成功"
+					},
+					"edit": {
+						"basic": {
+							"title": "基本信息",
+							"name": "名称",
+							"category": "分类名称",
+							"difficulty": "难度",
+							"description": "描述",
+							"successMsg": "任务更新成功"
+						},
+						"flag": {
+							"title": "Flag",
+							"flag": "Flag",
+							"placeholder": "当前 Flag: {{ flag }}",
+							"successMsg": "Flag 更新成功"
+						}
+					}
+				},
+				"contest": {
+					"edit": {
+						"basic": {
+							"title": "基本信息",
+							"validator": "注册验证方式",
+							"name": "名称",
+							"begin": "开始时间",
+							"end": "结束时间",
+							"regBegin": "报名开始时间",
+							"regEnd": "报名结束时间",
+							"successMsg": "比赛信息修改成功"
+						}
+					},
+					"create": {
+						"successMsg": "创建比赛成功"
+					},
+					"info": {
+						"eventAnnouncement": {
+							"successMsg": "创建事件成功，该事件目前处于未发布状态"
+						},
+						"eventPublish": {
+							"successMsg": {
+								"publish": "发布事件成功",
+								"unpublish": "忽略或撤下事件成功"
+							}
+						}
+					},
+					"challenge": {
+						"add": {
+							"title": "基本信息",
+							"challenge": "任务",
+							"successMsg": "添加任务成功"
+						},
+						"edit": {
+							"title": "基本信息",
+							"score": "分值",
+							"scoreDecrease": "递减分值(若不递减则填 0)",
+							"minScore": "分值下限",
+							"successMsg": "修改任务属性成功"
+						},
+						"changeVisibility": {
+							"dialogTitle": "确认操作",
+							"dialogContent": "当前比赛正在进行，您确认要执行该操作吗？",
+							"successMsg": "修改题目可见度成功！"
+						}
+					}
+				}
+			}
+		}
+	},
+	"DIALOGS_OK": "确定",
+	"DIALOGS_YES": "是",
+	"DIALOGS_NO": "否",
+	"DIALOGS_CLOSE": "关闭"
+}
